@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/app/src/main.py", line 15, in <module>
+    from utils.database import get_connection
+  File "/app/src/utils/database.py", line 8, in <module>
+    from sqlalchemy import create_engine
+ModuleNotFoundError: No module named 'sqlalchemy'

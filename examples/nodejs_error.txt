@@ -1,0 +1,5 @@
+TypeError: Cannot read properties of undefined (reading 'name')
+    at UserController.getUser (/app/src/controllers/user.js:42:23)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at next (/app/node_modules/express/lib/router/route.js:144:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:5)

@@ -1,0 +1,17 @@
+error[E0507]: cannot move out of `user` because it is borrowed
+  --> src/handlers/user_handler.rs:23:18
+   |
+22 |     let profile = &user.profile;
+   |                    ---- `user` is borrowed here
+23 |     process_user(user);
+   |                    ^^^^ move occurs because `user` has type `User`, which does not implement the `Copy` trait
+   |
+note: the value must be usable after the borrow is released
+
+error[E0382]: borrow of moved value: `user`
+  --> src/handlers/user_handler.rs:30:14
+   |
+23 |     process_user(user);
+   |                  ---- value moved here
+30 |     println!("{}", user.name);
+   |                    ^^^^ value borrowed here after move

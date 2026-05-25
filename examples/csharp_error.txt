@@ -1,0 +1,7 @@
+Unhandled exception. System.NullReferenceException: Object reference not set to an instance of an object.
+   at MyApp.Services.UserService.GetUserAsync(Guid id) in /app/Services/UserService.cs:line 45
+   at MyApp.Controllers.UserController.Get(Guid id) in /app/Controllers/UserController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 invocationResult)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionFilterAsync>g__Awaited|8_0(ControllerActionInvoker invoker, ValueTask`1 invocationResult, ActionFilterChain& chain)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeResultFilterAsync>g__Awaited|7_0(ControllerActionInvoker invoker, ValueTask`1 invocationResult, ActionFilterChain& chain)

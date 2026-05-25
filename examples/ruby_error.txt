@@ -1,0 +1,9 @@
+/usr/lib/ruby/gems/3.1.0/gems/activerecord-7.0.4/lib/active_record/relation.rb:539:in `find_each': undefined method `name' for #<User:0x00007f8b1c4a5b30> (NoMethodError)
+
+    from /usr/lib/ruby/gems/3.1.0/gems/activerecord-7.0.4/lib/active_record/relation.rb:539:in `block in find_each'
+    from /usr/lib/ruby/gems/3.1.0/gems/activerecord-7.0.4/lib/active_record/relation.rb:528:in `loop'
+    from /usr/lib/ruby/gems/3.1.0/gems/activerecord-7.0.4/lib/active_record/relation.rb:528:in `find_each'
+    from /app/app/services/user_sync_service.rb:42:in `sync_users'
+    from /app/app/controllers/admin/users_controller.rb:18:in `index'
+    from /usr/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+    from /usr/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/abstract_controller/base.rb:357:in `process_action'

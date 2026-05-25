@@ -1,0 +1,13 @@
+goroutine 1 [running]:
+main.processRequest(0xc0000b8000)
+	/app/src/server.go:87 +0x45
+main.main()
+	/app/src/main.go:23 +0x1a0
+
+panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 17 [running]:
+main.handleConnection(0xc000102000)
+	/app/src/connection.go:142 +0x89
+created by main.(*Server).Start
+	/app/src/server.go:55 +0x120

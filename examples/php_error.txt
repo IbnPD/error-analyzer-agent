@@ -1,0 +1,7 @@
+Fatal error: Uncaught Error: Call to a member function query() on null in /var/www/html/app/src/Database.php:34
+Stack trace:
+#0 /var/www/html/app/src/Models/UserModel.php(67): Database->getConnection()
+#1 /var/www/html/app/src/Controllers/UserController.php(23): UserModel->findAll()
+#2 /var/www/html/app/public/index.php(15): UserController->index()
+#3 {main}
+  thrown in /var/www/html/app/src/Database.php on line 34
